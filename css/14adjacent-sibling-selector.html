@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 인접한 형제 셀렉터, 같은 부모를 두고 있음, 직전에 위치 */
+        h1 + p {
+            color: blue;
+        }
+        /* 바로 직전의 element가 error 클래스를 가지고 있어야 함. */
+        .error + p {
+            border: 5px solid;
+        }
+
+        .note + p {
+            text-decoration: line-through
+        }
+
+        /* div 바로 뒤에 있는 p에 적용*/
+        div + p {
+            background-color: tomato;
+        } 
+
+        /* div 다음에 있는 p들에 적용*/
+        div ~ p {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.error+p>lorem^h1.note+p>lorem -->
+    <h1 class="error"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo deleniti ea eum temporibus possimus sunt iste, voluptatem quaerat minima quod expedita repellat delectus mollitia quas magnam distinctio ipsum vel pariatur.
+    </p>
+    <h1 class="note"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem enim facilis itaque ratione perspiciatis magnam sed dignissimos quos, eius quam laudantium placeat molestias in iusto ea commodi maxime, praesentium porro.
+    </p>
+
+    <div>
+        <p>
+            Lorem.
+        </p>
+        <p>
+            Porro?
+        </p>
+    </div>
+
+    <p>
+        Lorem.
+    </p>
+    <p>
+        Cumque.
+    </p>
+</body>
+</html>

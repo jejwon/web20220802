@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- 우선순위 문제 발생, 같은 값일 때 순서 옯기기, id 지정하기 -->
+    <style>
+        #table01.my-table td {
+            color: blue;
+            border: 5px solid;
+        }
+    </style>
+    <!-- 내부스타일 -->
+    <link rel="stylesheet" href="mystyle01.css"> 
+    <!-- 외부스타일 -->
+</head>
+<body>
+    <!-- 인라인스타일, 우선순위 1위 -->
+    <table id="table01" class="my-table">
+        <tr> 
+            <td style="border: 10px solid red;">
+                Lorem.
+            </td>
+            <td>
+                Necessitatibus.
+            </td>
+            <td>
+                Obcaecati.
+            </td>
+            <td>
+                Quae.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lorem.
+            </td>
+            <td>
+                Consectetur!
+            </td>
+            <td>
+                Eos.
+            </td>
+            <td>
+                Rerum!
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lorem.
+            </td>
+            <td>
+                Quod.
+            </td>
+            <td>
+                Beatae?
+            </td>
+            <td>
+                Reprehenderit.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            text-decoration: underline;
+          }
+        /* child selector 건너뛰지 않고 바로 위에 있어야 함*/
+        .error > p {
+            background-color: yellow;
+        }
+
+        div > p {
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- .note>.error>p>lorem -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae aperiam repellat nisi pariatur itaque necessitatibus cupiditate voluptatum eum! Libero velit similique omnis molestias excepturi exercitationem doloribus incidunt rerum deserunt.
+            </p>
+        </div>
+    </div>
+
+    <!-- .error>.note>p>lorem -->
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas odio alias beatae doloribus assumenda, quo libero, dolores eum, provident cumque magnam dignissimos. Repellendus ratione illum error, ad adipisci soluta?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
