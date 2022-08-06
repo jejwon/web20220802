@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .trial{
+            display: flex ;
+            background-color: black;
+            color: white;
+
+        }
+        .trial>div{
+            font-size: 30px;
+            font-weight: bold;
+            padding: 15px 25px;
+        }
+        /* class 전체에 hover를 주게 되면 전체에 작용/ class> div에 나눠서 주게 되면 칸마다 작용 */
+        .trial>div:hover{
+            background-color:green;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="trial">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>SQL</div>
+        <div>PYTHON</div>
+        <div>PHP</div>
+        <div>BOOTSTRAP</div>
+        <div>HOW TO</div> <!--altf와 방향키로 위 아래 줄바꿈-->
+    </div>
+</body>
+</html>
