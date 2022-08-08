@@ -8,13 +8,14 @@
             background-color: gray;
             height: 200px;
             justify-content: space-evenly;
-            align-items: flex-end;
+            align-items: stretch;
         }
         .item{
             width: 100px;
             font-size: 48px;
             font-weight: bold;
         }
+       /*위아래 마진은 겹치지만 좌우는 안 겹침*/
         #item3{
             font-size:  96px;
             /*margin-right: 50px;*/
@@ -22,6 +23,7 @@
         }
         #item4{
             /* margin-left: 50px; */
+            /* margin-left: auto; */
         }
         .item:nth-child(even){
             background-color: yellow;
