@@ -9,18 +9,25 @@
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script>
-        
-        //함수도 값이 될 수 있다. 함수 안의 함수
-        function printDouble(f) {
-            console.log(f() + f());
-        }
+<script>
+    let a = {
+        name: "micky",
 
+    };
 
-        printDouble(function() {
-            return "hello";
-        });
-    </script>
+    let b = {
+        name: "donald"
+    };
+
+    function sing() {
+        console.log(this.name + "노래를 부릅니다");
+    };
+
+    a.sing = sing;
+    b.sing = sing;
+
+    a.sing();
+    b.sing();
+</script>
 </body>
 </html>
-
