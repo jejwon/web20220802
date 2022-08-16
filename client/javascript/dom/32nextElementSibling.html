@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- h2>lorem1^h3>lorem1 -->
+    <h2>
+        Lorem.
+    </h2>
+    <h3>
+        Lorem.
+    </h3>
+
+    <!-- (h1>lorem1^p>lorem)*10 -->
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae voluptate beatae praesentium numquam recusandae, facere magni eos, ut illum quisquam fuga nam eligendi natus deserunt consequatur voluptas placeat porro iste.
+    </p>
+    <h1>
+        Corporis.
+    </h1>
+    <p>
+        Distinctio, facilis voluptate voluptates inventore unde eius earum rem amet ab, fuga delectus quaerat esse. Quisquam ea animi harum deleniti assumenda obcaecati quibusdam minus saepe quia odio! Repellat, voluptatum dolores.
+    </p>
+    <h1>
+        Nihil.
+    </h1>
+    <p>
+        Molestiae, officia. Dolorem itaque cum reiciendis ipsam, deleniti fuga nulla modi, dolor inventore recusandae, repellat voluptatibus tempora ab laboriosam in ullam quod expedita cupiditate! Ad ipsam omnis quaerat enim dolorum?
+    </p>
+    <h1>
+        Magnam?
+    </h1>
+    <p>
+        Quo praesentium dignissimos molestias quasi eum autem enim tempora illo, laborum laboriosam facilis itaque unde consequuntur ipsum nemo repellendus hic perferendis laudantium eligendi molestiae officia vitae. Vero cumque dolorem necessitatibus.
+    </p>
+    <h1>
+        Quas.
+    </h1>
+    <p>
+        Ipsa nulla qui unde consequatur aliquid. Debitis, magni ab? Aspernatur atque odit ullam magni dolore expedita culpa fugit facere! Aliquam repudiandae rem voluptate et omnis maiores ex perspiciatis dicta nobis?
+    </p>
+    <h1>
+        Vitae.
+    </h1>
+    <p>
+        Placeat est accusantium ullam expedita illum autem doloribus dolor enim quis, neque voluptatibus maiores quidem provident blanditiis eveniet repudiandae sequi, sint dicta veritatis quam ab aliquam fugiat tempora hic. Quas!
+    </p>
+    <h1>
+        Veniam!
+    </h1>
+    <p>
+        Voluptatum ex maiores assumenda ea vero ullam perferendis deleniti sapiente cupiditate delectus eaque laboriosam, possimus expedita? Doloribus repellat voluptate sapiente omnis cumque asperiores, sed ea quasi nesciunt maxime architecto autem?
+    </p>
+    <h1>
+        Fugiat.
+    </h1>
+    <p>
+        Distinctio laborum ducimus culpa, odio adipisci dolores, vero iure repellat excepturi ut voluptatum exercitationem! Laboriosam quasi id quis labore consectetur repudiandae ab ipsum, aperiam excepturi facere obcaecati reiciendis dolores aut!
+    </p>
+    <h1>
+        Magnam!
+    </h1>
+    <p>
+        Officia quia vitae aliquid modi quaerat ex asperiores quos temporibus voluptatibus deleniti laboriosam eligendi, deserunt dolores dolorem similique quasi aut amet et reprehenderit, id illum animi. Ad et est quos.
+    </p>
+    <h1>
+        Dolorum!
+    </h1>
+    <p>
+        Fuga repellat nesciunt aspernatur ipsa laudantium, autem officia perferendis minus et sint? Saepe, deserunt! Nihil obcaecati quas tempora velit aliquid similique ex cumque quisquam et animi maxime iure, pariatur temporibus.
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+    document.querySelector("h2").addEventListener("click",function () {
+        document.querySelector("h3").classList.toggle("d-none");
+    })
+
+    let toggles = document.querySelectorAll("h1");
+    for (let i = 0; i < toggles.length; i++) {
+        toggles[i].addEventListener("click", function() {
+            this.nextElementSibling.classList.toggle("d-none");
+        });
+    }
+    
+
+
+    </script>
+</body>
+</html>
